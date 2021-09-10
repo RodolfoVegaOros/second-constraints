@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="otros_constraints" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Raiz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6u-RW-sCp" userLabel="Contenedor Bodega">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bodega XJD893" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRs-Qr-aii">
+                                        <rect key="frame" x="124.66666666666669" y="52" width="126" height="20.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="warehouse (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Phi-8v-5QU">
+                                        <rect key="frame" x="80" y="102" width="215" height="245"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96351835610000003" green="0.7127378701" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Phi-8v-5QU" firstAttribute="top" secondItem="CRs-Qr-aii" secondAttribute="bottom" constant="29.670000000000002" id="1Kh-GX-DfE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Phi-8v-5QU" secondAttribute="trailing" constant="80" id="KZy-Fx-GXf"/>
+                                    <constraint firstAttribute="bottom" secondItem="Phi-8v-5QU" secondAttribute="bottom" constant="59" id="cq6-XB-Jpg"/>
+                                    <constraint firstItem="CRs-Qr-aii" firstAttribute="centerX" secondItem="V6u-RW-sCp" secondAttribute="centerX" id="eRD-1b-0QD"/>
+                                    <constraint firstItem="CRs-Qr-aii" firstAttribute="top" secondItem="V6u-RW-sCp" secondAttribute="top" constant="52" id="qml-rp-6zf"/>
+                                    <constraint firstItem="Phi-8v-5QU" firstAttribute="leading" secondItem="V6u-RW-sCp" secondAttribute="leading" constant="80" id="t7e-c0-Fjj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nl5-pX-EqZ" userLabel="Contenedor Temperatura">
+                                <rect key="frame" x="0.0" y="406" width="375" height="406"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Z-jl-M9T">
+                                        <rect key="frame" x="299.66666666666669" y="8" width="67.333333333333314" height="73"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5C2-jM-Jyc">
+                                        <rect key="frame" x="123" y="165" width="128" height="77"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64107254039999995" green="1" blue="0.84844959170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5C2-jM-Jyc" firstAttribute="centerY" secondItem="nl5-pX-EqZ" secondAttribute="centerY" id="98H-SF-mXd"/>
+                                    <constraint firstItem="Z9Z-jl-M9T" firstAttribute="top" secondItem="nl5-pX-EqZ" secondAttribute="top" constant="8" id="VPi-D9-Fe0"/>
+                                    <constraint firstItem="Z9Z-jl-M9T" firstAttribute="height" secondItem="nl5-pX-EqZ" secondAttribute="height" multiplier="0.18" id="aic-oj-8wx"/>
+                                    <constraint firstItem="5C2-jM-Jyc" firstAttribute="centerX" secondItem="nl5-pX-EqZ" secondAttribute="centerX" id="bds-Z5-21m"/>
+                                    <constraint firstItem="Z9Z-jl-M9T" firstAttribute="width" secondItem="nl5-pX-EqZ" secondAttribute="width" multiplier="0.18" id="cWD-sX-shD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z9Z-jl-M9T" secondAttribute="trailing" constant="8" id="so4-G4-7mI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V6u-RW-sCp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="IGR-2N-tTo"/>
+                            <constraint firstItem="V6u-RW-sCp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="izb-FU-Nwg"/>
+                            <constraint firstItem="V6u-RW-sCp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kBj-Uz-ZEb"/>
+                            <constraint firstItem="nl5-pX-EqZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pgZ-4p-cDj"/>
+                            <constraint firstItem="V6u-RW-sCp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="roO-Qa-2MR"/>
+                            <constraint firstItem="nl5-pX-EqZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="s4h-fN-ufS"/>
+                            <constraint firstAttribute="bottom" secondItem="nl5-pX-EqZ" secondAttribute="bottom" id="sfQ-D5-sdx"/>
+                            <constraint firstItem="nl5-pX-EqZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zkA-jd-Gbo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.22660098522168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thermometer" width="512" height="512"/>
+        <image name="warehouse (1)" width="512" height="512"/>
+    </resources>
+</document>
